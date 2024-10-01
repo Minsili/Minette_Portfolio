@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import './styles.css'
 import Bubbles from './animations/bubbles'
-import mimi from '../assets/mimi-photo.jpg'
+import mimi from '../assets/professional-image.jpg'
 import Typed from 'typed.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3Alt, faHtml5,faJs, faReact,faFigma } from '@fortawesome/free-brands-svg-icons';
