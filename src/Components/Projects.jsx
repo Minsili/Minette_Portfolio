@@ -4,7 +4,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import exampleImage from '../assets/mimi-photo.jpg';
+import p1 from '../assets/project-images/proj1.png'
+import p2 from '../assets/project-images/proj2.png'
+import p3 from '../assets/project-images/proj3.png'
+import p4 from '../assets/project-images/proj4.png'
 import './styles2.css';
 
 const Projects = () => {
@@ -22,7 +25,7 @@ const Projects = () => {
       <div className="slider-container">
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={20}
+          spaceBetween={15}
           slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
@@ -35,10 +38,9 @@ const Projects = () => {
         >
           {/* Card 1 */}
           <SwiperSlide>
-            <div className="box">
+            <div className="box box1">
               <div className="image">
                 <a href="#">
-                  <img src={exampleImage} alt="Project" />
                 </a>
               </div>
             </div>
@@ -49,7 +51,7 @@ const Projects = () => {
             <div className="box">
               <div className="image">
                 <a href="#">
-                  <img src={exampleImage} alt="Project" />
+                  <img src={p2} alt="Project" />
                 </a>
               </div>
             </div>
@@ -60,7 +62,7 @@ const Projects = () => {
             <div className="box">
               <div className="image">
                 <a href="#">
-                  <img src={exampleImage} alt="Project" />
+                  <img src={p3} alt="Project" />
                 </a>
               </div>
             </div>
@@ -71,7 +73,7 @@ const Projects = () => {
             <div className="box">
               <div className="image">
                 <a href="#">
-                  <img src={exampleImage} alt="Project" />
+                  <img src={p4} alt="Project" />
                 </a>
               </div>
             </div>
