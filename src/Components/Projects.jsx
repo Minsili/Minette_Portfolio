@@ -4,7 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import exampleImage from '../assets/contact-image.svg';
+import exampleImage from '../assets/mimi-photo.jpg';
 import './styles2.css';
 
 const Projects = () => {
