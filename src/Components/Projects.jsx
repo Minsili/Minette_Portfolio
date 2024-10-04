@@ -48,10 +48,10 @@ const Projects = () => {
 
           {/* Card 2 */}
           <SwiperSlide>
-            <div className="box">
+            <div className="box box2">
               <div className="image">
                 <a href="#">
-                  <img src={p2} alt="Project" />
+                  
                 </a>
               </div>
             </div>
@@ -59,10 +59,10 @@ const Projects = () => {
 
           {/* Card 3 */}
           <SwiperSlide>
-            <div className="box">
+            <div className="box box3">
               <div className="image">
                 <a href="#">
-                  <img src={p3} alt="Project" />
+                  
                 </a>
               </div>
             </div>
@@ -70,10 +70,9 @@ const Projects = () => {
 
           {/* Card 4 */}
           <SwiperSlide>
-            <div className="box">
+            <div className="box box4">
               <div className="image">
                 <a href="#">
-                  <img src={p4} alt="Project" />
                 </a>
               </div>
             </div>

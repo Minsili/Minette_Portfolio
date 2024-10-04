@@ -129,6 +129,24 @@
   background-size: cover;
   background-attachment: fixed;
   }
+  .slider-container .box2 {
+    background-image: url("../assets/project-images/proj2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .slider-container .box3 {
+        background-image: url("../assets/project-images/proj3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .slider-container .box4 {
+        background-image: url("../assets/project-images/proj4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        }
   
   .slider-container .box:hover {
     border: 4px solid #4fdcdc;
