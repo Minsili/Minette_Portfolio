@@ -21,7 +21,7 @@ const Contact = () => {
     try {
       console.log("Form data being sent:", formData); // Log form data
   
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://minette-portfolio-jnda.onrender.com//send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
