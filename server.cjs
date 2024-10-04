@@ -2,6 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -10,12 +11,20 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Serve static files from "dist" directory
+app.use(express.static(path.join(__dirname, "dist")));
+
+// Render client app
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "dist/index.html"))
+);
+
 // Email configuration
 // Configure nodemailer transporter
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
-  secure: false, // use SSL/TLS
+  secure: false, // use TLS
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
@@ -34,8 +43,7 @@ app.post("/send-email", (req, res) => {
     from: email,
     to: process.env.EMAIL_USER,
     subject: `Message from ${firstname} ${secondname}`,
-    text: `You have a new message from ${firstname} ${secondname}.\n\nEmail: 
-           ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`,
+    text: `You have a new message from ${firstname} ${secondname}.\n\nEmail: ${email}\nPhone: ${phoneNumber}\nMessage: ${message}`,
   };
 
   // Send email
